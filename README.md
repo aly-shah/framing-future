@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FramingFuture™ — Next.js
 
-## Getting Started
+A recreation of [framingfuture.contechcorp.io](https://framingfuture.contechcorp.io/) built with **Next.js 16 (App Router) + TypeScript + Tailwind CSS v4**.
 
-First, run the development server:
+> _Less noise. More clarity._ — the premium coaching system with SEVDA™ and CortexCraft™.
+
+## Getting started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+npm run build && npm run start   # production
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## What's included
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Hero** with looping video background, brand tagline, and Clarity-Call CTA
+- **Mission band**, **3-pillar framework** (SELF / WORLD / FUTURE), **Why FramingFuture™**
+- **Founder section** (Sevda Yücel) using the real photo asset
+- **Audiences grid** (Families, Youth, Moms, Dads, Schools, Companies)
+- **CTA**, **newsletter**, and full **footer** with socials & legal links
+- **Sticky responsive navbar** with mobile menu and EN/DE/TR language toggle
+- **Booking modal** ("Book Your Clarity Call") with a working form + success state
 
-## Learn More
+## Project structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+  app/
+    layout.tsx        # fonts (Space Grotesk + Inter), metadata, providers
+    page.tsx          # all page sections
+    globals.css       # design tokens + component classes (Tailwind v4 @theme)
+  components/
+    navbar.tsx        # sticky nav, mobile menu, language switch
+    footer.tsx
+    booking-context.tsx / booking-modal.tsx / book-button.tsx
+    newsletter.tsx
+    logo.tsx          # SVG wordmark
+public/assets/
+    hero.mp4          # hero background video  (from source site)
+    founder.webp      # founder photo          (from source site)
+    logo.png          # original brand icon
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Design tokens
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Defined in `src/app/globals.css` via Tailwind v4 `@theme`:
 
-## Deploy on Vercel
+| Token | Value | Use |
+|-------|-------|-----|
+| `--color-ink` | `#0e1417` | dark sections / text |
+| `--color-teal` | `#12b3a6` | primary accent |
+| `--color-teal-bright` | `#1ed6c6` | highlights on dark |
+| `--color-paper` | `#f5f7f7` | light section backgrounds |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Fonts:** Space Grotesk (display) + Inter (body).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Notes
+
+- Assets `hero.mp4` and `founder.webp` were pulled from the live source site. Swap in
+  official brand assets when you receive them (`public/assets/`).
+- The logo is recreated as an SVG wordmark (`components/logo.tsx`) because the source
+  logo file is a low-resolution icon — replace `<Logo>` with the real mark if provided.
+- Booking and newsletter forms are front-end only; wire them to your backend / CRM.
+- Content is in English; the DE/TR toggle is UI-only and ready to connect to i18n.
