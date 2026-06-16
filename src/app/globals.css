@@ -36,6 +36,11 @@
 html {
   scroll-behavior: smooth;
   background: #0a0b0c;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 body {

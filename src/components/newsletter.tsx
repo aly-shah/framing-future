@@ -14,7 +14,7 @@ export function Newsletter() {
         e.preventDefault();
         setDone(true);
       }}
-      className="flex gap-3 max-w-md"
+      className="flex flex-col sm:flex-row gap-3 max-w-md"
     >
       <input
         type="email"
@@ -22,7 +22,7 @@ export function Newsletter() {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         placeholder={t.newsletter.placeholder}
-        className="flex-1 rounded-md bg-transparent border border-white/25 px-4 py-2.5 text-sm text-white placeholder:text-white/40 focus:border-white/60 outline-none"
+        className="flex-1 min-w-0 w-full rounded-md bg-transparent border border-white/25 px-4 py-2.5 text-sm text-white placeholder:text-white/40 focus:border-white/60 outline-none"
       />
       <button
         type="submit"
