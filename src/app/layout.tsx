@@ -6,6 +6,8 @@ import { BookingProvider } from "@/components/booking-context";
 import { BookingModal } from "@/components/booking-modal";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { CookieConsentProvider } from "@/components/cookie-consent";
+import { SiteWidgets } from "@/components/site-widgets";
 
 const display = Audiowide({
   variable: "--font-display",
@@ -34,10 +36,13 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-ink text-white">
         <LocaleProvider>
           <BookingProvider>
-            <Navbar />
-            <main className="flex-1">{children}</main>
-            <Footer />
-            <BookingModal />
+            <CookieConsentProvider>
+              <Navbar />
+              <main className="flex-1">{children}</main>
+              <Footer />
+              <BookingModal />
+              <SiteWidgets />
+            </CookieConsentProvider>
           </BookingProvider>
         </LocaleProvider>
       </body>

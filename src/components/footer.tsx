@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Logo } from "./logo";
 import { Newsletter } from "./newsletter";
 import { useLocale, LOCALES, Locale } from "./i18n";
+import { useCookieConsent } from "./cookie-consent";
 
 const SOCIALS = [
   { name: "Facebook", path: "M13 22v-8h2.7l.4-3H13V9.1c0-.9.3-1.5 1.6-1.5H16V5c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1V11H7v3h2.6v8H13z" },
@@ -20,6 +21,7 @@ const FLAG_NAME: Record<Locale, string> = {
 
 export function Footer() {
   const { t, locale, setLocale } = useLocale();
+  const { openSettings: openCookieSettings } = useCookieConsent();
 
   const links = [
     { label: t.nav.home, href: "/" },
@@ -75,11 +77,15 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/55">
             <p>{t.footer.copyright}</p>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
-              {t.footer.legalItems.map((l) => (
-                <a key={l} href="#" className="hover:text-white transition-colors">
-                  {l}
-                </a>
-              ))}
+              <Link href="/imprint" className="hover:text-white transition-colors">
+                {t.footer.legalItems[0]}
+              </Link>
+              <Link href="/privacy" className="hover:text-white transition-colors">
+                {t.footer.legalItems[1]}
+              </Link>
+              <button onClick={openCookieSettings} className="hover:text-white transition-colors">
+                {t.footer.legalItems[2]}
+              </button>
             </div>
             <Link href="/contact" className="text-accent hover:underline">
               {t.footer.returning}
