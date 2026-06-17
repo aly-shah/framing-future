@@ -52,7 +52,6 @@ export function IcfCircle() {
                   transform: "translate(-50%, -50%)",
                 }}
                 onMouseEnter={() => setHovered(i)}
-                onMouseLeave={() => setHovered(null)}
               >
                 <button
                   aria-label={labels[i]}
