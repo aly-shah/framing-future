@@ -27,6 +27,7 @@ type YouthDict = {
     items: { badge: string; desc: string; tags: string[] }[];
   };
   why: { title: string; desc: string }[];
+  whyTitle: string;
   modules: {
     eyebrow: string;
     heading: string;
@@ -65,6 +66,7 @@ export const youthContent: Record<Locale, YouthDict> = {
       { title: "SEVDA™", desc: "method gives you clear orientation" },
       { title: "Pilot starts 2026", desc: "Transparent, no overpromises" },
     ],
+    whyTitle: "Why it works",
     modules: {
       eyebrow: "The Five SEVDA™ Modules",
       heading: "Calm structure. Real movement.",
@@ -108,6 +110,7 @@ export const youthContent: Record<Locale, YouthDict> = {
       { title: "SEVDA™", desc: "Methode gibt dir klare Orientierung" },
       { title: "Pilot startet 2026", desc: "Transparent, keine leeren Versprechen" },
     ],
+    whyTitle: "Warum es funktioniert",
     modules: {
       eyebrow: "Die fünf SEVDA™ Module",
       heading: "Ruhige Struktur. Echte Bewegung.",
@@ -151,6 +154,7 @@ export const youthContent: Record<Locale, YouthDict> = {
       { title: "SEVDA™", desc: "yöntemi sana net bir yön verir" },
       { title: "Pilot 2026'da başlıyor", desc: "Şeffaf, abartılı vaatler yok" },
     ],
+    whyTitle: "Neden işe yarıyor",
     modules: {
       eyebrow: "Beş SEVDA™ Modülü",
       heading: "Sakin yapı. Gerçek hareket.",

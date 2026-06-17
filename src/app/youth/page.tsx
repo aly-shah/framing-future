@@ -113,7 +113,7 @@ export default function YouthPage() {
       <section id="why" className="bg-paper text-ink scroll-mt-20">
         <div className="container-x pb-20 md:pb-28">
           <h2 className="font-display text-3xl sm:text-4xl font-semibold text-center">
-            Why it works
+            {y.whyTitle}
           </h2>
           <div className="grid sm:grid-cols-3 gap-10 mt-14">
             {y.why.map((w, i) => (

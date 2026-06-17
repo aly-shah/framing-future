@@ -210,7 +210,7 @@ export const aboutContent: Record<Locale, AboutDict> = {
       subtitle:
         "FramingFuture™ basiert auf aktueller Forschung aus Psychologie, Neurowissenschaft und Coaching-Wissenschaft. Wir integrieren bewährte Konzepte wie:",
       frameworks: [
-        "Growth Mindset (Carol Dweck)",
+        "Wachstumsmentalität (Carol Dweck)",
         "Selbstbestimmungstheorie (Deci & Ryan)",
         "Flow-Theorie (Mihaly Csikszentmihalyi)",
         "Selbstwirksamkeit (Albert Bandura)",

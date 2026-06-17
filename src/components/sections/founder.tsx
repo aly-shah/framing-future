@@ -25,7 +25,7 @@ export function Founder() {
         </div>
         <div>
           <h2 className="font-display text-3xl sm:text-5xl font-semibold text-white">
-            Hello. I am
+            {f.greeting}
             <br />
             Sevda Yücel.
           </h2>

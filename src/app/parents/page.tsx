@@ -109,7 +109,7 @@ export default function ParentsPage() {
       {/* WHY IT WORKS */}
       <section className="bg-paper text-ink">
         <div className="container-x pb-20 md:pb-28">
-          <h2 className="font-display text-3xl sm:text-4xl font-semibold text-center">Why it works</h2>
+          <h2 className="font-display text-3xl sm:text-4xl font-semibold text-center">{c.whyTitle}</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mt-14">
             {c.why.map((w, i) => (
               <div key={i} className="text-center">

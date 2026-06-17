@@ -11,7 +11,7 @@ export function Why() {
       <div className="container-x py-20 md:py-28 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         <div>
           <h2 className="font-display text-3xl sm:text-5xl font-semibold leading-tight">
-            Why FramingFuture™
+            {w.eyebrow}
           </h2>
           <p className="text-lg text-muted-l mt-6 leading-relaxed">{w.body}</p>
         </div>

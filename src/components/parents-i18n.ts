@@ -20,6 +20,7 @@ type ParentsDict = {
   hero: { title: string; subtitle: string; button: string };
   steps: { title: string; desc: string }[];
   programs: { heading: string; subtitle: string; learnMore: string; items: { desc: string; tags: string[] }[] };
+  whyTitle: string;
   why: { title: string; desc: string }[];
   ladder: {
     eyebrow: string;
@@ -54,6 +55,7 @@ export const parentsContent: Record<Locale, ParentsDict> = {
         { desc: "Empower your child's growth with future-oriented coaching methods and digital resilience.", tags: ["8 Weeks", "SEVDA™ Framework"] },
       ],
     },
+    whyTitle: "Why it works",
     why: [
       { title: "ICF-oriented", desc: "methodology" },
       { title: "SEVDA™", desc: "method gives you clear orientation" },
@@ -130,6 +132,7 @@ export const parentsContent: Record<Locale, ParentsDict> = {
         { desc: "Stärke das Wachstum deines Kindes mit zukunftsorientierten Coaching-Methoden und digitaler Resilienz.", tags: ["8 Wochen", "SEVDA™ Framework"] },
       ],
     },
+    whyTitle: "Warum es funktioniert",
     why: [
       { title: "ICF-orientierte", desc: "Methodik" },
       { title: "SEVDA™", desc: "Methode gibt dir klare Orientierung" },
@@ -206,6 +209,7 @@ export const parentsContent: Record<Locale, ParentsDict> = {
         { desc: "Geleceğe yönelik koçluk yöntemleri ve dijital dayanıklılıkla çocuğunun gelişimini güçlendir.", tags: ["8 Hafta", "SEVDA™ Çerçevesi"] },
       ],
     },
+    whyTitle: "Neden işe yarıyor",
     why: [
       { title: "ICF odaklı", desc: "metodoloji" },
       { title: "SEVDA™", desc: "yöntemi sana net bir yön verir" },

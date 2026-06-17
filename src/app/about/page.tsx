@@ -95,18 +95,18 @@ export default function AboutPage() {
         <div className="container-x pb-20 md:pb-28 text-center">
           <h2 className="font-display text-3xl sm:text-4xl font-semibold text-white">{a.heart.heading}</h2>
           <p className="text-white/55 mt-3">{a.heart.subtitle}</p>
-          <div className="grid sm:grid-cols-3 lg:grid-cols-5 gap-8 mt-14">
+          <div className="grid sm:grid-cols-3 lg:grid-cols-5 gap-8 mt-14 items-stretch">
             {a.heart.pillars.map((p, i) => (
-              <div key={p.name} className="text-center">
+              <div key={p.name} className="text-center flex flex-col h-full">
                 <div
-                  className="mx-auto w-14 h-14 rounded-full flex items-center justify-center font-display text-xl font-semibold text-white"
+                  className="mx-auto w-14 h-14 rounded-full flex items-center justify-center font-display text-xl font-semibold text-white shrink-0"
                   style={{ background: PILLAR_COLORS[i] }}
                 >
                   {PILLAR_LETTERS[i]}
                 </div>
-                <h3 className="font-semibold text-white mt-4">{p.name}</h3>
-                <p className="text-white/55 text-sm mt-2 leading-relaxed">{p.desc}</p>
-                <p className="text-accent italic text-sm mt-3">“{p.quote}”</p>
+                <h3 className="font-semibold text-white mt-4 min-h-[3rem] flex items-center justify-center">{p.name}</h3>
+                <p className="text-white/55 text-sm mt-1 leading-relaxed flex-1">{p.desc}</p>
+                <p className="text-accent italic text-sm mt-4">“{p.quote}”</p>
               </div>
             ))}
           </div>

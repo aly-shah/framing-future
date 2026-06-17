@@ -101,6 +101,7 @@ export const dictionaries = {
     },
     founder: {
       eyebrow: "Meet the founder",
+      greeting: "Hello. I am",
       role: "Coach · KUMON instructor · ICF member",
       body: "Founder of FramingFuture™, coach, KUMON instructor and ICF member. Book one of the limited spots – now.",
       quote: "This first step will change everything.",
@@ -238,17 +239,17 @@ export const dictionaries = {
       heading: "Drei Schritte von Klarheit zu Selbstvertrauen",
       items: [
         {
-          tag: "SELF",
+          tag: "SELBST",
           verb: "Rahme es ein",
           body: "Stärke von innen. Entdecke deine Stärken und baue echte innere Klarheit auf.",
         },
         {
-          tag: "WORLD",
+          tag: "WELT",
           verb: "Gestalte es",
           body: "Gemeinsam wachsen. Lerne Verantwortung, Teamwork und Respekt in jeder Begegnung.",
         },
         {
-          tag: "FUTURE",
+          tag: "ZUKUNFT",
           verb: "Übernimm es",
           body: "Aktiv gestalten. Mit Future Skills und klarer Vision meisterst du die Herausforderungen von morgen.",
         },
@@ -281,6 +282,7 @@ export const dictionaries = {
     },
     founder: {
       eyebrow: "Die Gründerin",
+      greeting: "Hallo. Ich bin",
       role: "Coach · KUMON-Instruktorin · ICF-Mitglied",
       body: "Gründerin von FramingFuture™, Coach, KUMON-Instruktorin und ICF-Mitglied. Sichere dir jetzt einen der limitierten Plätze.",
       quote: "Dieser erste Schritt verändert alles.",
@@ -418,17 +420,17 @@ export const dictionaries = {
       heading: "Netlikten özgüvene üç adım",
       items: [
         {
-          tag: "SELF",
+          tag: "ÖZ",
           verb: "Çerçevele",
           body: "İçten gelen güç. Güçlü yönlerini keşfet ve gerçek bir iç netlik oluştur.",
         },
         {
-          tag: "WORLD",
+          tag: "DÜNYA",
           verb: "Şekillendir",
           body: "Birlikte büyüyün. Her etkileşimde sorumluluk, takım çalışması ve saygıyı öğren.",
         },
         {
-          tag: "FUTURE",
+          tag: "GELECEK",
           verb: "Sahiplen",
           body: "Aktif olarak şekillendir. Geleceğin becerileri ve net bir vizyonla yarının zorluklarının üstesinden gel.",
         },
@@ -461,6 +463,7 @@ export const dictionaries = {
     },
     founder: {
       eyebrow: "Kurucuyla tanışın",
+      greeting: "Merhaba. Ben",
       role: "Koç · KUMON eğitmeni · ICF üyesi",
       body: "FramingFuture™'ın kurucusu, koç, KUMON eğitmeni ve ICF üyesi. Sınırlı kontenjanlardan birini hemen ayırt.",
       quote: "Bu ilk adım her şeyi değiştirecek.",
