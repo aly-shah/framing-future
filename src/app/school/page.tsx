@@ -14,7 +14,7 @@ export default function SchoolPage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative bg-cover bg-center" style={{ backgroundImage: "url('/assets/sch-core.webp')" }}>
+      <section className="relative bg-cover bg-center" style={{ backgroundImage: "url('/assets/school-banner.jpg')" }}>
         <div className="absolute inset-0 bg-ink/78" />
         <div className="container-x relative pt-40 pb-24 md:pt-48 md:pb-28 text-center">
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-semibold text-white leading-[1.1] max-w-3xl mx-auto">

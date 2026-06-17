@@ -12,9 +12,9 @@ const STEP_ICONS = [
 ];
 
 const WHY_ICONS = [
-  "M7 7h10v10H7zM9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3", // chip
-  "M12 3l7 3v5c0 4-3 7.5-7 9-4-1.5-7-5-7-9V6l7-3z", // shield
-  "M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.8 6.6 19.5l1.2-6L3.3 9.3l6.1-.7L12 3z", // star
+  "/assets/why-cortex.png", // CortexCraft™ (chip)
+  "/assets/why-sevda.png", // SEVDA™ (shield)
+  "/assets/why-pilot.png", // Pilot starts 2026 (star)
 ];
 
 export default function YouthPage() {
@@ -24,7 +24,7 @@ export default function YouthPage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative bg-cover bg-center" style={{ backgroundImage: "url('/assets/aud-youth.png')" }}>
+      <section className="relative bg-cover bg-center" style={{ backgroundImage: "url('/assets/youth-banner.jpg')" }}>
         <div className="absolute inset-0 bg-ink/75" />
         <div className="container-x relative pt-40 pb-24 md:pt-48 md:pb-28 text-center">
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-semibold text-white leading-[1.1] max-w-3xl mx-auto">
@@ -118,10 +118,8 @@ export default function YouthPage() {
           <div className="grid sm:grid-cols-3 gap-10 mt-14">
             {y.why.map((w, i) => (
               <div key={i} className="text-center">
-                <div className="mx-auto w-12 h-12 flex items-center justify-center text-ink">
-                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
-                    <path d={WHY_ICONS[i]} stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
+                <div className="mx-auto w-12 h-12 flex items-center justify-center">
+                  <Image src={WHY_ICONS[i]} alt="" width={40} height={40} className="w-9 h-9 object-contain" />
                 </div>
                 <h3 className="font-display text-lg font-semibold mt-4">{w.title}</h3>
                 <p className="text-muted-l text-sm mt-1">{w.desc}</p>

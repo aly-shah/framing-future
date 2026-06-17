@@ -98,6 +98,12 @@ export const dictionaries = {
       ],
       sevdaDesc:
         "A structured, science-backed coaching system that turns pressure into focus and potential into direction.",
+      nodeLabels: [
+        "Pilot starts 2026 — transparent, no overpromises",
+        "ICF-oriented methodology",
+        "Scientifically grounded (Neuro & Future Skills)",
+        "GDPR-compliant and secure",
+      ],
     },
     founder: {
       eyebrow: "Meet the founder",
@@ -279,6 +285,12 @@ export const dictionaries = {
       ],
       sevdaDesc:
         "Ein strukturiertes, wissenschaftlich fundiertes Coaching-System, das Druck in Fokus und Potenzial in Richtung verwandelt.",
+      nodeLabels: [
+        "Pilot startet 2026 — transparent, keine leeren Versprechen",
+        "ICF-orientierte Methodik",
+        "Wissenschaftlich fundiert (Neuro & Future Skills)",
+        "DSGVO-konform und sicher",
+      ],
     },
     founder: {
       eyebrow: "Die Gründerin",
@@ -460,6 +472,12 @@ export const dictionaries = {
       ],
       sevdaDesc:
         "Baskıyı odağa, potansiyeli yöne dönüştüren yapılandırılmış, bilime dayalı bir koçluk sistemi.",
+      nodeLabels: [
+        "Pilot 2026'da başlıyor — şeffaf, abartılı vaatler yok",
+        "ICF odaklı metodoloji",
+        "Bilimsel temelli (Nöro & Geleceğin Becerileri)",
+        "GDPR uyumlu ve güvenli",
+      ],
     },
     founder: {
       eyebrow: "Kurucuyla tanışın",

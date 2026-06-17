@@ -40,7 +40,7 @@ export default function AboutPage() {
       {/* HERO */}
       <section
         className="relative bg-cover bg-center"
-        style={{ backgroundImage: "url('/footerbg.webp')" }}
+        style={{ backgroundImage: "url('/assets/about-banner.jpg')" }}
       >
         <div className="absolute inset-0 bg-ink/70" />
         <div className="container-x relative pt-40 pb-24 md:pt-48 md:pb-28 text-center">
