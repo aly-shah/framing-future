@@ -70,6 +70,7 @@ export function Navbar() {
     phase === "active" ? "translate-x-0" : phase === "exit" ? "translate-x-full" : "-translate-x-full";
 
   return (
+    <>
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         scrolled
@@ -110,11 +111,13 @@ export function Navbar() {
           </button>
         </div>
       </nav>
+      </header>
 
-      {/* Full-screen slide drawer */}
+      {/* Full-screen slide drawer — rendered outside <header> so the scrolled
+          backdrop-blur doesn't turn the header into its containing block */}
       {menuVisible && (
         <div
-          className={`fixed inset-0 z-[60] bg-ink will-change-transform transition-transform duration-[450ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${drawerTransform}`}
+          className={`fixed inset-0 z-[90] overflow-y-auto bg-ink will-change-transform transition-transform duration-[450ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${drawerTransform}`}
         >
           <button
             onClick={closeMenu}
@@ -126,7 +129,7 @@ export function Navbar() {
             </svg>
           </button>
 
-          <div className="h-full flex flex-col items-center justify-center gap-8 px-6">
+          <div className="min-h-full flex flex-col items-center justify-center gap-8 px-6 py-24">
             <ul className="flex flex-col items-center gap-3">
               {links.map((l) => (
                 <li key={l.href}>
@@ -169,6 +172,6 @@ export function Navbar() {
           </div>
         </div>
       )}
-    </header>
+    </>
   );
 }

@@ -91,9 +91,7 @@ export default function PartnersPage() {
             {c.collaborate.items.map((item, i) => (
               <div
                 key={i}
-                className={`text-center rounded-card p-6 transition-transform duration-300 hover:-translate-y-1.5 ${
-                  i === 3 ? "bg-white shadow-[0_30px_70px_-30px_rgba(0,0,0,0.25)] border border-mist" : ""
-                }`}
+                className="text-center rounded-card p-6 border border-transparent transition-all duration-300 hover:-translate-y-1.5 hover:bg-white hover:border-mist hover:shadow-[0_30px_70px_-30px_rgba(0,0,0,0.25)]"
               >
                 <div className="mx-auto w-12 h-12 rounded-full flex items-center justify-center text-white" style={{ background: COLLAB[i].color }}>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">

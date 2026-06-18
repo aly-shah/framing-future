@@ -151,7 +151,7 @@ export const schoolContent: Record<Locale, SchoolDict> = {
       cards: [
         {
           tier: "Für Schulen",
-          name: "School Pack",
+          name: "Schul-Paket",
           desc: "Ergänzt deinen Lehrplan um Lebens- & Zukunftskompetenzen — DSGVO-konform und messbar.",
           features: [
             "SEVDA™ Connect, Digital & Launch als integrierte Module",
@@ -164,7 +164,7 @@ export const schoolContent: Record<Locale, SchoolDict> = {
         },
         {
           tier: "Für Unternehmen",
-          name: "Corporate Partner",
+          name: "Unternehmenspartner",
           desc: "Gesellschaftliche Wirkung und Mitarbeiterengagement durch Sinn — Plätze sponsern, Markenausrichtung gewinnen.",
           features: [
             "Sponsoring von Stipendienplätzen für Jugendliche",
@@ -227,7 +227,7 @@ export const schoolContent: Record<Locale, SchoolDict> = {
       cards: [
         {
           tier: "Okullar için",
-          name: "School Pack",
+          name: "Okul Paketi",
           desc: "Müfredatını yaşam & gelecek becerileriyle tamamlar — GDPR uyumlu ve ölçülebilir.",
           features: [
             "Entegre modüller olarak SEVDA™ Connect, Digital & Launch",
@@ -240,7 +240,7 @@ export const schoolContent: Record<Locale, SchoolDict> = {
         },
         {
           tier: "Şirketler için",
-          name: "Corporate Partner",
+          name: "Kurumsal Ortak",
           desc: "Amaç yoluyla toplumsal etki ve çalışan katılımı — kontenjan sponsorluğu, marka uyumu kazanın.",
           features: [
             "Gençler için burs kontenjanı sponsorluğu",

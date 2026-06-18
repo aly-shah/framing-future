@@ -146,7 +146,7 @@ export default function ParentsPage() {
                   }`}
                 >
                   <p className="text-[11px] uppercase tracking-wider text-accent font-semibold">{pkg.tier}</p>
-                  <h3 className="font-display text-xl font-semibold mt-2">{m.name}</h3>
+                  <h3 className="font-display text-xl font-semibold mt-2">{pkg.name}</h3>
                   <p className="text-white/55 text-sm mt-2 leading-relaxed">{pkg.desc}</p>
                   <ul className="space-y-2.5 mt-5 flex-1">
                     {pkg.features.map((f) => (

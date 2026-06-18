@@ -171,7 +171,7 @@ export const aboutContent: Record<Locale, AboutDict> = {
       quote: "Die Zukunft beginnt im Inneren. Ich helfe Menschen, diesen Weg zu gehen — klar, mutig, bewusst.",
       credLabel: "Qualifikationen & Erfahrung",
       creds: [
-        "Certified Professional Coach (CTA-CPC)",
+        "Zertifizierter Professioneller Coach (CTA-CPC)",
         "ICF-orientierte Ausbildung und Methodik",
         "Schöpferin des SEVDA™ Coaching-Modells",
         "16+ Jahre Erfahrung in Bildung und Jugendentwicklung",

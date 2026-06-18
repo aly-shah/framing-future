@@ -87,9 +87,14 @@ export function Footer() {
                 {t.footer.legalItems[2]}
               </button>
             </div>
-            <Link href="/contact" className="text-accent hover:underline">
+            <a
+              href="https://lunacal.ai/framingfuture-coaching"
+              target="_blank"
+              rel="noreferrer"
+              className="text-accent hover:underline"
+            >
               {t.footer.returning}
-            </Link>
+            </a>
           </div>
 
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs">

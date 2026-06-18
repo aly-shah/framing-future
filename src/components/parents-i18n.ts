@@ -28,7 +28,7 @@ type ParentsDict = {
     subtitle: string;
     monthlyPrefix: string;
     monthlySuffix: string;
-    packages: { tier: string; desc: string; features: string[] }[];
+    packages: { name: string; tier: string; desc: string; features: string[] }[];
     connect: { tag: string; desc: string; basisLabel: string; premiumLabel: string };
   };
   cta: { heading: string };
@@ -70,6 +70,7 @@ export const parentsContent: Record<Locale, ParentsDict> = {
       monthlySuffix: "/month over 24 months",
       packages: [
         {
+          name: "Basic Digital Quest",
           tier: "Entry Tier",
           desc: "A focused starting point. One module, group format, fully gamified. The first real change happens here.",
           features: [
@@ -80,6 +81,7 @@ export const parentsContent: Record<Locale, ParentsDict> = {
           ],
         },
         {
+          name: "Premium Focus Quest",
           tier: "Most Chosen · Most Balanced",
           desc: "The complete coaching journey – two SEVDA™ modules with deep 1:1 work, ideal for teens at a turning point.",
           features: [
@@ -91,6 +93,7 @@ export const parentsContent: Record<Locale, ParentsDict> = {
           ],
         },
         {
+          name: "Elite Future Legacy",
           tier: "Full Transformation",
           desc: "A 12-month transformation arc – all five SEVDA™ pillars, 1:1 throughout, with full family integration.",
           features: [
@@ -147,6 +150,7 @@ export const parentsContent: Record<Locale, ParentsDict> = {
       monthlySuffix: "/Monat über 24 Monate",
       packages: [
         {
+          name: "Basis Digital-Quest",
           tier: "Einstiegsstufe",
           desc: "Ein fokussierter Startpunkt. Ein Modul, Gruppenformat, voll gamifiziert. Die erste echte Veränderung passiert hier.",
           features: [
@@ -157,6 +161,7 @@ export const parentsContent: Record<Locale, ParentsDict> = {
           ],
         },
         {
+          name: "Premium Fokus-Quest",
           tier: "Am beliebtesten · Am ausgewogensten",
           desc: "Die komplette Coaching-Reise – zwei SEVDA™ Module mit intensiver 1:1-Arbeit, ideal für Jugendliche an einem Wendepunkt.",
           features: [
@@ -168,6 +173,7 @@ export const parentsContent: Record<Locale, ParentsDict> = {
           ],
         },
         {
+          name: "Elite Zukunfts-Vermächtnis",
           tier: "Volle Transformation",
           desc: "Ein 12-monatiger Transformationsbogen – alle fünf SEVDA™ Säulen, durchgehend 1:1, mit voller Familienintegration.",
           features: [
@@ -224,6 +230,7 @@ export const parentsContent: Record<Locale, ParentsDict> = {
       monthlySuffix: "/ay, 24 ay boyunca",
       packages: [
         {
+          name: "Temel Dijital Görev",
           tier: "Giriş Seviyesi",
           desc: "Odaklı bir başlangıç noktası. Tek modül, grup formatı, tamamen oyunlaştırılmış. İlk gerçek değişim burada olur.",
           features: [
@@ -234,6 +241,7 @@ export const parentsContent: Record<Locale, ParentsDict> = {
           ],
         },
         {
+          name: "Premium Odak Görevi",
           tier: "En Çok Seçilen · En Dengeli",
           desc: "Eksiksiz koçluk yolculuğu – derin 1:1 çalışmayla iki SEVDA™ modülü, dönüm noktasındaki gençler için ideal.",
           features: [
@@ -245,6 +253,7 @@ export const parentsContent: Record<Locale, ParentsDict> = {
           ],
         },
         {
+          name: "Elit Gelecek Mirası",
           tier: "Tam Dönüşüm",
           desc: "12 aylık bir dönüşüm yayı – beş SEVDA™ direğinin tamamı, baştan sona 1:1, tam aile entegrasyonuyla.",
           features: [
