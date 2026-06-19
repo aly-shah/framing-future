@@ -16,7 +16,9 @@ export function LegalShell({
       <section className="relative bg-ink overflow-hidden border-b border-line">
         <div className="container-x relative pt-36 pb-14 md:pt-44 md:pb-16 text-center">
           <p className="eyebrow">{eyebrow}</p>
-          <h1 className="font-display text-4xl sm:text-5xl font-semibold text-white mt-3">{title}</h1>
+          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-semibold text-white mt-3 break-words hyphens-auto">
+            {title}
+          </h1>
           {meta && <p className="text-white/55 mt-4">{meta}</p>}
         </div>
       </section>
