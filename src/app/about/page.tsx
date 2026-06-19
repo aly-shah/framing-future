@@ -258,11 +258,11 @@ export default function AboutPage() {
           </div>
           <div className="grid sm:grid-cols-2 gap-6 mt-12 max-w-4xl mx-auto">
             {a.evidence.frameworks.map((f) => (
-              <div key={f} className="flex items-center justify-center sm:justify-start gap-4 rounded-xl border border-emerald-300/70 bg-emerald-50 px-6 py-6 text-center sm:text-left">
+              <div key={f} className="flex items-center gap-4 rounded-xl border border-emerald-300/70 bg-emerald-50 px-6 py-6">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" className="shrink-0 text-emerald-600">
                   <path d="M5 13l4 4L19 7" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                <span className="font-display text-lg sm:text-xl text-emerald-700">{f}</span>
+                <span className="font-display text-lg sm:text-xl text-emerald-700 min-w-0 break-words hyphens-auto">{f}</span>
               </div>
             ))}
           </div>
