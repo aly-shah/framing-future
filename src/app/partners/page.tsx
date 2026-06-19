@@ -73,7 +73,15 @@ export default function PartnersPage() {
           <div className="relative rounded-[2rem] overflow-hidden px-8 py-16 md:px-16 md:py-20 text-center bg-cover bg-center" style={{ backgroundImage: "url('/footerbg.webp')" }}>
             <div className="absolute inset-0 bg-ink/55" />
             <div className="relative max-w-2xl mx-auto">
-              <h2 className="font-display text-3xl sm:text-4xl font-semibold text-white leading-tight break-words hyphens-auto">{c.band.heading}</h2>
+              <h2
+                className={`font-display font-semibold text-white leading-tight break-words ${
+                  locale === "de"
+                    ? "text-[clamp(1rem,5vw,1.875rem)] sm:text-4xl"
+                    : "text-3xl sm:text-4xl"
+                }`}
+              >
+                {c.band.heading}
+              </h2>
               <p className="text-white/70 mt-4">{c.band.text}</p>
               <div className="flex justify-center mt-7">
                 <BookButton label={c.band.button} />
