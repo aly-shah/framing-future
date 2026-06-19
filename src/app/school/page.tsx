@@ -135,13 +135,13 @@ export default function SchoolPage() {
           </div>
           <div className="grid md:grid-cols-2 gap-6 mt-14 max-w-4xl mx-auto">
             {s.offers.cards.map((card, i) => (
-              <div key={i} className="rounded-card bg-ink text-white p-8 flex flex-col items-center sm:items-stretch text-center sm:text-left">
+              <div key={i} className="rounded-card bg-ink text-white p-8 flex flex-col items-center sm:items-stretch text-center sm:text-left break-words hyphens-auto">
                 <p className="text-[11px] uppercase tracking-wider text-accent font-semibold">{card.tier}</p>
                 <h3 className="font-display text-2xl font-semibold mt-2">{card.name}</h3>
                 <p className="text-white/55 text-sm mt-2 leading-relaxed">{card.desc}</p>
                 <ul className="space-y-2.5 mt-5 flex-1 text-left">
                   {card.features.map((f) => (
-                    <li key={f} className="flex gap-2.5 text-white/75 text-sm">
+                    <li key={f} className="flex gap-2.5 text-white/75 text-sm min-w-0">
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" className="mt-0.5 shrink-0 text-accent">
                         <path d="M5 13l4 4L19 7" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
