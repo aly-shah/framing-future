@@ -135,11 +135,11 @@ export default function SchoolPage() {
           </div>
           <div className="grid md:grid-cols-2 gap-6 mt-14 max-w-4xl mx-auto">
             {s.offers.cards.map((card, i) => (
-              <div key={i} className="rounded-card bg-ink text-white p-8 flex flex-col">
+              <div key={i} className="rounded-card bg-ink text-white p-8 flex flex-col items-center sm:items-stretch text-center sm:text-left">
                 <p className="text-[11px] uppercase tracking-wider text-accent font-semibold">{card.tier}</p>
                 <h3 className="font-display text-2xl font-semibold mt-2">{card.name}</h3>
                 <p className="text-white/55 text-sm mt-2 leading-relaxed">{card.desc}</p>
-                <ul className="space-y-2.5 mt-5 flex-1">
+                <ul className="space-y-2.5 mt-5 flex-1 text-left">
                   {card.features.map((f) => (
                     <li key={f} className="flex gap-2.5 text-white/75 text-sm">
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" className="mt-0.5 shrink-0 text-accent">
@@ -149,7 +149,7 @@ export default function SchoolPage() {
                     </li>
                   ))}
                 </ul>
-                <div className="mt-6 pt-5 border-t border-line">
+                <div className="mt-6 pt-5 border-t border-line w-full">
                   <p className="font-display text-2xl font-semibold">
                     <span className="text-sm text-white/50 font-sans mr-1">{s.offers.fromLabel}</span>
                     {SCHOOL_OFFERS_META[i].priceFrom}
