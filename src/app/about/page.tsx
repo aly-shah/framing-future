@@ -231,25 +231,20 @@ export default function AboutPage() {
         <div className="container-x py-20 md:py-28 text-center">
           <h2 className="font-display text-3xl sm:text-4xl font-semibold">{a.values.heading}</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
-            {a.values.items.map((item, i) => {
-              const elevated = i === 0;
-              return (
-                <div
-                  key={item.name}
-                  className={`rounded-card p-8 text-center border transition-all duration-300 hover:-translate-y-1.5 hover:bg-white hover:border-mist hover:shadow-[0_30px_70px_-30px_rgba(0,0,0,0.25)] ${
-                    elevated ? "bg-white shadow-[0_30px_70px_-30px_rgba(0,0,0,0.25)] border-mist" : "border-transparent"
-                  }`}
-                >
-                  <div className="mx-auto w-11 h-11 flex items-center justify-center text-ink">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                      <path d={VALUE_ICONS[i]} stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </div>
-                  <h3 className="font-semibold mt-4">{item.name}</h3>
-                  <p className="text-muted-l text-sm mt-2 leading-relaxed">{item.desc}</p>
+            {a.values.items.map((item, i) => (
+              <div
+                key={item.name}
+                className="rounded-card p-8 text-center transition-all duration-300 hover:-translate-y-1.5 hover:bg-white hover:shadow-[0_30px_70px_-30px_rgba(0,0,0,0.25)]"
+              >
+                <div className="mx-auto w-11 h-11 flex items-center justify-center text-ink">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                    <path d={VALUE_ICONS[i]} stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
                 </div>
-              );
-            })}
+                <h3 className="font-semibold mt-4">{item.name}</h3>
+                <p className="text-muted-l text-sm mt-2 leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
