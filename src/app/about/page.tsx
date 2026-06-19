@@ -236,8 +236,8 @@ export default function AboutPage() {
               return (
                 <div
                   key={item.name}
-                  className={`rounded-card p-8 text-center transition-transform duration-300 hover:-translate-y-1.5 ${
-                    elevated ? "bg-white shadow-[0_30px_70px_-30px_rgba(0,0,0,0.25)] border border-mist" : "border border-transparent"
+                  className={`rounded-card p-8 text-center border transition-all duration-300 hover:-translate-y-1.5 hover:bg-white hover:border-mist hover:shadow-[0_30px_70px_-30px_rgba(0,0,0,0.25)] ${
+                    elevated ? "bg-white shadow-[0_30px_70px_-30px_rgba(0,0,0,0.25)] border-mist" : "border-transparent"
                   }`}
                 >
                   <div className="mx-auto w-11 h-11 flex items-center justify-center text-ink">
@@ -287,11 +287,11 @@ export default function AboutPage() {
                 {a.cta.heading}
               </h2>
               <p className="text-white/70 mt-5 text-lg">{a.cta.subtitle}</p>
-              <div className="flex justify-center mt-8 gap-4">
-                <Link href="/contact" className="btn-primary">
+              <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center mt-8 gap-4">
+                <Link href="/contact" className="btn-primary w-full sm:w-auto">
                   {a.cta.button}
                 </Link>
-                <BookButton className="btn-outline text-white" />
+                <BookButton className="btn-outline text-white w-full sm:w-auto" />
               </div>
             </div>
           </div>
