@@ -81,7 +81,7 @@ export const aboutContent: Record<Locale, AboutDict> = {
       items: [
         { name: "ICF-oriented", desc: "methodology" },
         { name: "SEVDA™ method", desc: "gives you clear orientation" },
-        { name: "NeuroGamification™", desc: "makes learning experiential" },
+        { name: "CortexCraft™", desc: "makes learning experiential" },
       ],
     },
     values: {
@@ -191,7 +191,7 @@ export const aboutContent: Record<Locale, AboutDict> = {
       items: [
         { name: "ICF-orientierte", desc: "Methodik" },
         { name: "SEVDA™ Methode", desc: "gibt dir klare Orientierung" },
-        { name: "NeuroGamification™", desc: "macht Lernen erlebbar" },
+        { name: "CortexCraft™", desc: "macht Lernen erlebbar" },
       ],
     },
     values: {
@@ -301,7 +301,7 @@ export const aboutContent: Record<Locale, AboutDict> = {
       items: [
         { name: "ICF odaklı", desc: "metodoloji" },
         { name: "SEVDA™ yöntemi", desc: "sana net bir yön verir" },
-        { name: "NeuroGamification™", desc: "öğrenmeyi deneyimsel kılar" },
+        { name: "CortexCraft™", desc: "öğrenmeyi deneyimsel kılar" },
       ],
     },
     values: {

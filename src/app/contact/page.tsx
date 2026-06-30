@@ -127,7 +127,6 @@ export default function ContactPage() {
         <div className="container-x pb-24 md:pb-32">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="font-display text-3xl sm:text-5xl font-semibold text-white">{c.faq.heading}</h2>
-            <p className="text-white/55 mt-5">{c.faq.subtitle}</p>
           </div>
           <div className="max-w-3xl mx-auto mt-12 space-y-3">
             {c.faq.items.map((item, i) => {

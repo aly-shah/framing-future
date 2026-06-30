@@ -405,7 +405,7 @@ export const dictionaries = {
       book: "Netlik Görüşmesi Planla",
     },
     hero: {
-      badge: "Daha az gürültü. Daha çok netlik.",
+      badge: "Az gürültü. Çok netlik.",
       titlePre: "Standarttan",
       titleHi: "fazlasını",
       titlePost: "isteyen herkes için",

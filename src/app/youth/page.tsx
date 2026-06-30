@@ -1,8 +1,10 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useLocale } from "@/components/i18n";
 import { youthContent, PROGRAM_META, MODULE_META } from "@/components/youth-i18n";
+import { moduleSlug } from "@/components/modules-i18n";
 import { BookButton } from "@/components/book-button";
 
 const STEP_ICONS = [
@@ -96,12 +98,12 @@ export default function YouthPage() {
                       </span>
                     ))}
                   </div>
-                  <button className="inline-flex items-center gap-1.5 mt-5 text-sm font-medium text-ink hover:text-accent transition-colors">
+                  <Link href={`/${moduleSlug(m.title)}`} className="inline-flex items-center gap-1.5 mt-5 text-sm font-medium text-ink hover:text-accent transition-colors">
                     {y.programs.learnMore}
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" className="group-hover:translate-x-1 transition-transform">
                       <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
-                  </button>
+                  </Link>
                 </div>
               );
             })}

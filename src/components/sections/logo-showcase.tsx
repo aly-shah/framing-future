@@ -21,7 +21,7 @@ export function LogoShowcase() {
         >
           {/* revealed tagline (centered, behind the halves) */}
           <span
-            className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0 whitespace-nowrap bg-white text-ink font-medium text-base sm:text-xl px-5 py-3 transition-opacity duration-500 ${
+            className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0 whitespace-nowrap bg-white text-ink font-medium text-sm sm:text-xl px-3.5 py-2.5 sm:px-5 sm:py-3 transition-opacity duration-500 ${
               open ? "opacity-100" : "opacity-0"
             }`}
           >
